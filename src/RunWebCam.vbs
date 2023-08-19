@@ -33,12 +33,12 @@ If FSObject.FileExists(Program) Then
 		WScript.Sleep Timer
 		WshShell.SendKeys "+W"
 	Else
-		MsgBox "Ошибка переключения на главное окно программы", 16, "Ошибка"
+		MsgBox "Can't switch to a main windows of the MPC HC", 16, "Error"
 	End If
 	Set WshShell = Nothing
 Else
-	MsgBox	"Media Player Classic Home Cinema не установлен." & vbNewLine &_
-		"Получить программу можно по адресу http://mpc-hc.org/", 16, "Ошибка"
+	MsgBox	"Media Player Classic Home Cinema is not installed." & vbNewLine &_
+		"You can get the application from the link: http://mpc-hc.org/", 16, "Error"
 End If
 Set FSObject = Nothing
 
