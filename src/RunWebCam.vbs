@@ -1,7 +1,7 @@
 '**************************************************************************************************
 '	RunWebCam.vbs
 '
-'	Description: Script run MPC-HC in fullscreen live mode
+'	Description: Script runs MPC-HC in fullscreen live mode
 '	Parameters:  None
 '
 '	Author: Dmitrii Glukhov
@@ -33,7 +33,7 @@ If FSObject.FileExists(Program) Then
 		WScript.Sleep Timer
 		WshShell.SendKeys "+W"
 	Else
-		MsgBox "Can't switch to a main windows of the MPC HC", 16, "Error"
+		MsgBox "Can't switch to the main window of the MPC HC", 16, "Error"
 	End If
 	Set WshShell = Nothing
 Else
